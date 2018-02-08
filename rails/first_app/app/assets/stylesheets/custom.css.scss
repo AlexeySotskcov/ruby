@@ -1,6 +1,8 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+/* variables */
+
 /* universal */
 body {
   padding-top: 60px;
@@ -27,9 +29,11 @@ body {
 }
 
 /* footer */
-footer small {
+footer {
+ small {
   padding-top: 17px;
   padding-left: 5%;
   float: left;
-  color: #777;
+  color: $gray-light;
+  }
 }
