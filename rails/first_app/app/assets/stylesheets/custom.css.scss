@@ -1,2 +1,27 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+
+/* universal */
+body {
+  padding-top: 60px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* header */
+#logo {
+  float: left;
+  padding-top: 9px;
+  font-size: 1.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: white;
+
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+}
