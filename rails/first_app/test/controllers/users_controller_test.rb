@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class UserControllerTest < ActionDispatch::IntegrationTest
+class UsersControllerTest < ActionDispatch::IntegrationTest
 
   def setup
     @title = "My first application"
