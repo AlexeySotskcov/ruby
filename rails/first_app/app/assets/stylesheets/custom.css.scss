@@ -3,6 +3,14 @@
 
 /* variables */
 
+
+/* mixins */
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
 /* universal */
 body {
   padding-top: 60px;
@@ -36,4 +44,45 @@ footer {
   float: left;
   color: $gray-light;
   }
+}
+
+/* different */
+.debug_dump {
+  clear: both;
+  margin-top: 45px;
+  background: #b36464;
+  width: 100%;
+  @include box_sizing;
+}
+
+
+/* forms */
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
+.avatar {
+  height: 80px;
 }

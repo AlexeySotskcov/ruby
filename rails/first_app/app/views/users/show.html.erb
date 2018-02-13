@@ -1,0 +1,12 @@
+<% provide(:title, @user.name) %>
+
+<div class="row">
+  <div class="col-md-1">
+    <%= image_tag(@user.image.small.url, alt: 'Image', class: "avatar") if @user.image? %>
+  </div>
+
+  <div class="col-md-3">
+    <p><%= @user.name %></p>
+    <p><%= @user.email %></p>
+  </div>
+</div>
