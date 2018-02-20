@@ -86,3 +86,17 @@ input {
 .avatar {
   height: 80px;
 }
+
+.check_box {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#sessions_remember_me {
+  width: auto;
+  margin-left: 0;
+}
