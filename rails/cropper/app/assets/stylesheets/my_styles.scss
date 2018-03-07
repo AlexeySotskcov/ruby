@@ -42,7 +42,11 @@ header {
 }
 
 
+<<<<<<< HEAD
 input, button {
+=======
+input{
+>>>>>>> cropper
   border: 1px solid #bbb;
   border-radius: 30px;
   @include for_form_100_width;
