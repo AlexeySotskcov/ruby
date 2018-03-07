@@ -14,7 +14,8 @@ class UrlCropsController < ApplicationController
         @url.save
       end
     end
-    render plain: @url.short_url
+    render 'new'
+    #render plain: @url.short_url
     #render plain: request.original_url
   end
 
@@ -28,6 +29,12 @@ class UrlCropsController < ApplicationController
     end
   end
 
+  def update
+    @url = UrlCrop.find_by(base_url: params[:url_crop][:base_url].downcase)
+    if @url.update_attributes(url_params)
+      render 'new'
+    end
+  end
 
   private
 
