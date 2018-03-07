@@ -42,7 +42,7 @@ header {
 }
 
 
-input{
+input, button {
   border: 1px solid #bbb;
   border-radius: 30px;
   @include for_form_100_width;
