@@ -1,0 +1,11 @@
+<%= form_for @url do |f| %>
+
+  <%= f.label :base_url %>
+  <%= f.text_field :base_url%>
+
+  <%= f.label "Short link" %>
+  <%= f.text_field :short_url, readonly: true %>
+
+  <%= f.submit "Crop"%>
+
+<% end %>

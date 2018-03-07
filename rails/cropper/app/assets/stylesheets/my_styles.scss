@@ -1,0 +1,55 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+@mixin for_form_100_width{
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+header {
+  a {
+    color: white;
+    &:hover {
+      color: blue;
+    }
+  }
+  small {
+    color: yellow;
+    float: right;
+    padding-top: 15px;
+  }
+
+  #logo {
+    float: left;
+    padding-top: 9px;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: white;
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+
+input{
+  border: 1px solid #bbb;
+  border-radius: 30px;
+  @include for_form_100_width;
+  @include box_sizing;
+}
+
+label {
+  @include for_form_100_width;
+  @include box_sizing;
+}
